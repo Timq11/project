@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoalTracker - Мои цели</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="form.html">Добавить цель</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="stats.html">Статистика</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Мои цели</h1>
+      <div class="controls">
+        <input type="text" id="search" placeholder="Поиск по названию цели" />
+        <select id="categoryFilter">
+          <option value="">Все категории</option>
+          <option value="Study">Study</option>
+          <option value="Sport">Sport</option>
+          <option value="Health">Health</option>
+          <option value="Finance">Finance</option>
+          <option value="Self-development">Self-development</option>
+        </select>
+        <select id="statusFilter">
+          <option value="">Все статусы</option>
+          <option value="active">Активные</option>
+          <option value="completed">Выполненные</option>
+        </select>
+      </div>
+      <div id="goalsContainer" class="goals-container">
+      </div>
+      <a href="form.html" class="add-goal-btn">Добавить цель</a>
+    </main>
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
