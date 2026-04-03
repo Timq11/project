@@ -1,0 +1,11 @@
+{
+  "name": "goaltracker-docs",
+  "version": "1.0.0",
+  "description": "Documentation for GoalTracker project",
+  "scripts": {
+    "build-pdf": "markdown-pdf docs/documentation.md -o docs/documentation.pdf"
+  },
+  "devDependencies": {
+    "markdown-pdf": "^11.0.0"
+  }
+}
