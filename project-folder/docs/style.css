@@ -1,0 +1,178 @@
+/* Основные параметры документа */
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  line-height: 1;
+  text-align: justify;
+  margin: 2cm 1.5cm 2cm 3cm;
+  padding: 0;
+}
+
+/* Параграфы */
+p {
+  margin: 0;
+  text-indent: 1.25cm;
+  line-height: 1;
+  text-align: justify;
+}
+
+/* Первый параграф в разделе без отступа */
+h1 + p,
+h2 + p,
+h3 + p {
+  text-indent: 0;
+}
+
+/* Заголовки */
+h1 {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 12pt 0;
+  line-height: 1;
+  page-break-before: always;
+}
+
+h2 {
+  font-size: 13pt;
+  font-weight: bold;
+  margin: 12pt 0 6pt 0;
+  line-height: 1;
+  text-indent: 0;
+}
+
+h3 {
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 6pt 0 6pt 0;
+  line-height: 1;
+  text-indent: 0;
+}
+
+/* Титульный лист */
+.title-page {
+  text-align: center;
+  margin: 0;
+  page-break-after: always;
+}
+
+.title-page p {
+  text-indent: 0;
+  text-align: center;
+  margin: 6pt 0;
+  line-height: 1.2;
+}
+
+/* Содержание */
+.toc-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14pt;
+  margin: 0 0 12pt 0;
+}
+
+.toc-entry {
+  margin: 0;
+  text-indent: 1.25cm;
+  line-height: 1;
+}
+
+.toc-entry-1 {
+  text-indent: 0;
+  margin: 6pt 0 0 0;
+}
+
+.toc-entry-2 {
+  text-indent: 1.25cm;
+  margin: 0;
+}
+
+.toc-entry-3 {
+  text-indent: 2.5cm;
+  margin: 0;
+}
+
+/* Списки */
+ul,
+ol {
+  margin: 0;
+  padding-left: 3.5cm;
+  line-height: 1;
+}
+
+li {
+  margin: 0 0 6pt 0;
+  text-indent: 0;
+  line-height: 1;
+  text-align: justify;
+}
+
+li p {
+  text-indent: 0;
+  margin: 0;
+}
+
+/* Таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12pt 0;
+  line-height: 1;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 4pt;
+  line-height: 1;
+  text-align: left;
+}
+
+/* Изображения */
+img {
+  max-width: 100%;
+  margin: 12pt 0;
+}
+
+/* Коды */
+code {
+  font-family: "Courier New", monospace;
+  font-size: 10pt;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 8pt;
+  margin: 12pt 0;
+  line-height: 1;
+  font-size: 9pt;
+  overflow-x: auto;
+}
+
+/* Разделители */
+hr {
+  margin: 12pt 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Ссылки */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Цитаты */
+blockquote {
+  margin: 12pt 0;
+  padding-left: 1.25cm;
+  border-left: 2pt solid #ccc;
+  text-indent: 1.25cm;
+}
+
+/* Управление разрывами страниц */
+@media print {
+  .page-break {
+    page-break-after: always;
+  }
+}

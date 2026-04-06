@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Documentation for GoalTracker project",
   "scripts": {
-    "build-pdf": "markdown-pdf docs/documentation.md -o docs/documentation.pdf"
+    "build-pdf": "markdown-pdf docs/documentation.md -o docs/documentation.pdf -c docs/style.css"
   },
   "devDependencies": {
     "markdown-pdf": "^11.0.0"
