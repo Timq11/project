@@ -1,10 +1,14 @@
 /* Основные параметры документа */
+@page {
+  size: A4;
+  margin: 2cm 1.5cm 2cm 3cm;
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
   font-size: 12pt;
   line-height: 1;
   text-align: justify;
-  margin: 2cm 1.5cm 2cm 3cm;
   padding: 0;
 }
 
