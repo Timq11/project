@@ -1,7 +1,18 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("goalForm");
   form.addEventListener("submit", handleFormSubmit);
+
+  const progressRange = document.getElementById("progressRange");
+  const progressValue = document.getElementById("progressValue");
+
+  if (progressRange && progressValue) {
+    const updateProgressLabel = () => {
+      progressValue.textContent = progressRange.value + "%";
+    };
+
+    progressRange.addEventListener("input", updateProgressLabel);
+    updateProgressLabel();
+  }
 });
 
 function validateForm(formData) {
